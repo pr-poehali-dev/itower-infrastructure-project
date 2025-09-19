@@ -63,10 +63,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				itower: {
-					dark: '#1F1F1F',
-					red: '#DC2626',
-					gray: '#404040',
-					'red-gradient': 'linear-gradient(135deg, #1F1F1F 0%, #DC2626 100%)'
+					dark: '#1E3A8A',
+					blue: '#3B82F6', 
+					gray: '#6B7280',
+					light: '#F8FAFC',
+					'blue-gradient': 'linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%)'
 				}
 			},
 			fontFamily: {

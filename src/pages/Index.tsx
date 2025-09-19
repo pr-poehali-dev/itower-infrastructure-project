@@ -52,24 +52,24 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-itower-dark via-itower-gray to-itower-dark">
+    <div className="min-h-screen bg-gradient-to-br from-itower-dark via-slate-800 to-itower-dark">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-itower-dark/95 backdrop-blur-sm border-b border-primary/20">
+      <nav className="fixed top-0 w-full z-50 bg-itower-dark/95 backdrop-blur-sm border-b border-itower-blue/20">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-montserrat font-bold text-primary">
+            <div className="text-2xl font-montserrat font-bold text-itower-blue">
               ITower
             </div>
             <div className="hidden md:flex space-x-8 text-sm font-medium">
-              <a href="#home" className="text-white hover:text-primary transition-colors">Главная</a>
-              <a href="#services" className="text-white hover:text-primary transition-colors">Услуги</a>
-              <a href="#projects" className="text-white hover:text-primary transition-colors">Проекты</a>
-              <a href="#geography" className="text-white hover:text-primary transition-colors">География</a>
-              <a href="#about" className="text-white hover:text-primary transition-colors">О компании</a>
-              <a href="#partners" className="text-white hover:text-primary transition-colors">Партнеры</a>
-              <a href="#contacts" className="text-white hover:text-primary transition-colors">Контакты</a>
+              <a href="#home" className="text-white hover:text-itower-blue transition-colors">Главная</a>
+              <a href="#services" className="text-white hover:text-itower-blue transition-colors">Услуги</a>
+              <a href="#projects" className="text-white hover:text-itower-blue transition-colors">Проекты</a>
+              <a href="#geography" className="text-white hover:text-itower-blue transition-colors">География</a>
+              <a href="#about" className="text-white hover:text-itower-blue transition-colors">О компании</a>
+              <a href="#partners" className="text-white hover:text-itower-blue transition-colors">Партнеры</a>
+              <a href="#contacts" className="text-white hover:text-itower-blue transition-colors">Контакты</a>
             </div>
-            <Button className="bg-primary hover:bg-primary/90">
+            <Button className="bg-itower-blue hover:bg-itower-blue/90">
               <Icon name="Phone" className="mr-2" size={16} />
               Связаться
             </Button>
@@ -88,7 +88,7 @@ const Index = () => {
           <div className="max-w-4xl pt-20">
             <h1 className="text-5xl md:text-7xl font-montserrat font-bold text-white mb-6 leading-tight">
               Независимый<br />
-              <span className="text-primary">инфраструктурный</span><br />
+              <span className="text-itower-blue">инфраструктурный</span><br />
               оператор
             </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl">
@@ -96,11 +96,11 @@ const Index = () => {
               (ОДН, АМС, крышные позиции) для всех операторов мобильной связи
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg">
+              <Button size="lg" className="bg-itower-blue hover:bg-itower-blue/90 text-white px-8 py-4 text-lg">
                 <Icon name="Building" className="mr-2" size={20} />
                 Наши услуги
               </Button>
-              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 text-lg">
+              <Button variant="outline" size="lg" className="border-itower-blue text-itower-blue hover:bg-itower-blue hover:text-white px-8 py-4 text-lg">
                 <Icon name="MapPin" className="mr-2" size={20} />
                 География работы
               </Button>
@@ -110,7 +110,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-itower-gray/50">
+      <section id="services" className="py-20 bg-slate-900/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-montserrat font-bold text-white mb-4">
@@ -122,10 +122,10 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="bg-card/80 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105">
+              <Card key={index} className="bg-slate-800/80 backdrop-blur-sm border-itower-blue/20 hover:border-itower-blue/40 transition-all duration-300 hover:scale-105">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
-                    <Icon name={service.icon} className="text-primary" size={24} />
+                  <div className="w-12 h-12 bg-itower-blue/20 rounded-lg flex items-center justify-center mb-4">
+                    <Icon name={service.icon} className="text-itower-blue" size={24} />
                   </div>
                   <CardTitle className="text-white text-xl font-montserrat">
                     {service.title}
@@ -154,22 +154,22 @@ const Index = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-gradient-to-br from-primary/20 to-primary/5 border-primary/30">
+            <Card className="bg-gradient-to-br from-itower-blue/20 to-itower-blue/5 border-itower-blue/30">
               <CardHeader>
                 <CardTitle className="text-white text-3xl font-montserrat">150+</CardTitle>
-                <CardDescription className="text-gray-300">Объектов построено</CardDescription>
+                <CardDescription className="text-itower-gray">Объектов построено</CardDescription>
               </CardHeader>
             </Card>
-            <Card className="bg-gradient-to-br from-primary/20 to-primary/5 border-primary/30">
+            <Card className="bg-gradient-to-br from-itower-blue/20 to-itower-blue/5 border-itower-blue/30">
               <CardHeader>
                 <CardTitle className="text-white text-3xl font-montserrat">4</CardTitle>
-                <CardDescription className="text-gray-300">Региона покрытия</CardDescription>
+                <CardDescription className="text-itower-gray">Региона покрытия</CardDescription>
               </CardHeader>
             </Card>
-            <Card className="bg-gradient-to-br from-primary/20 to-primary/5 border-primary/30">
+            <Card className="bg-gradient-to-br from-itower-blue/20 to-itower-blue/5 border-itower-blue/30">
               <CardHeader>
                 <CardTitle className="text-white text-3xl font-montserrat">99.9%</CardTitle>
-                <CardDescription className="text-gray-300">Надежность сети</CardDescription>
+                <CardDescription className="text-itower-gray">Надежность сети</CardDescription>
               </CardHeader>
             </Card>
           </div>
